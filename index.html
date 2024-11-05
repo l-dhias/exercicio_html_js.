@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAlidação de Campo</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Validação de Campos</h1>
+        <h2>Insira dois valores aos campos onde o Campo B seja mior que o Campo A </h2>
+        <form id="formulario">
+            <input type="number" id="Campo-A" required placeholder="Campo-A" />
+            
+            <input type="number" id="Campo-B" required placeholder="Campo-B" />
+            <button type="submit" id="validar">VALIDAR</button>
+        </form>
+        <p class="sucess-mensage">
+            O Número colocado no Campo B é maior que o colocado no Campo A 
+        </p>
+        <p class="erro-mensage">
+                O Campo A é maior que o Campo B 
+            </p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
