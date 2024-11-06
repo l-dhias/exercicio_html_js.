@@ -10,7 +10,7 @@ const campoA = document.getElementById('Campo-A').value
 const campoB = document.getElementById('Campo-B').value
 const mensagemSucesso = `O Campo ${campoB} é maior que ${campoA}, Bom trabalho!`
 
-if (CampoA < campoB){
+if (campoA < campoB){
 
     const conatinerMensagemSucesso =  document.querySelector('.sucess-mensage')
     conatinerMensagemSucesso.innerHTML = mensagemSucesso
