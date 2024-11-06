@@ -4,13 +4,13 @@ const form = document.getElementById('formulario');
 
 form.addEventListener('submit', function(e){
     e.preventDefault()
-})
 
-const campoA = document.getElementById('Campo-A')
-const campoB = document.getElementById('Campo-B')
-const mensagemSucesso = `O Campo ${Campo-B.value} é maior que ${Campo-A.value}, Bom trabalho!`
 
-if (campoA < campoB){
+const campoA = document.getElementById('Campo-A').value
+const campoB = document.getElementById('Campo-B').value
+const mensagemSucesso = `O Campo ${campoB} é maior que ${campoA}, Bom trabalho!`
+
+if (CampoA < campoB){
 
     const conatinerMensagemSucesso =  document.querySelector('.sucess-mensage')
     conatinerMensagemSucesso.innerHTML = mensagemSucesso
@@ -21,4 +21,5 @@ if (campoA < campoB){
 } else {
     document.querySelector('.erro-mensage').style.display = 'block'
 }
+})
 console.log(formulario)
